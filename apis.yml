@@ -1,8 +1,25 @@
 aid: gravity-sketch
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gravity-sketch.png
 name: Gravity Sketch
-description: 'Gravity Sketch is a company surfaced as a portfolio company of accel, gv, point-nine and
-  added to the API Evangelist network as a stub for enrichment. Sector: design. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Gravity Sketch is a 3D design and modeling application built for spatial creation, letting
+  designers sketch, model, and iterate on concepts in virtual reality (Meta Quest, PC VR) and on tablet.
+  It is widely used across automotive, footwear, industrial, and product design for early-stage ideation
+  and collaborative review, backed by a cloud collaboration platform (LandingPad) for sharing and version
+  history. The company is a creative-tools maker rather than an API-first provider; as of this enrichment
+  pass it publishes no public developer API, OpenAPI, developer portal, or documented webhook surface. This
+  profile was surfaced as a portfolio company of Accel, GV, and Point Nine and captures the company identity
+  plus a live domain-security probe.'
 url: https://raw.githubusercontent.com/api-evangelist/gravity-sketch/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Design
+- 3D Design
+- Virtual Reality
+- Product Design
+- Automotive Design
+- Collaboration
+- Creative Tools
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gravity-sketch-domain-security.yml
 - type: Website
   url: https://www.gravitysketch.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
